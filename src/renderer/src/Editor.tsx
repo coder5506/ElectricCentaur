@@ -29,7 +29,7 @@ import { useRef } from 'react'
 import * as display from './store/displaySlice'
 import * as editor from './store/editorSlice'
 import CodeMirror from '@uiw/react-codemirror'
-import type { RootState } from './store/store'
+import type { RootState } from './store/index'
 import type { EditorState } from './store/editorSlice'
 
 export const Editor = () => {

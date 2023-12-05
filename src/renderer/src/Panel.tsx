@@ -22,7 +22,12 @@
 import { useAppDispatch, useAppSelector } from './store/hooks'
 import * as display from './store/displaySlice'
 
-export const Panel = ({ children, className, displaySetting, ...props }): JSX.Element => {
+export const Panel = ({
+   children,
+   className = '',
+   displaySetting,
+   ...props
+}): JSX.Element => {
    const dispatch = useAppDispatch()
    const isShowing = useAppSelector(display.selectSetting(displaySetting))
 

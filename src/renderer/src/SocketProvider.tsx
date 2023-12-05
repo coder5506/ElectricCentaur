@@ -60,7 +60,7 @@ export const SocketProvider = ({ children }) => {
       }
       const handleDisconnect = () => {
          dispatch({ type: 'disconnect' })
-         connect()
+         connect(state.url)
       }
 
       connect(state.url)
