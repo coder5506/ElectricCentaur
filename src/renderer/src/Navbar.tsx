@@ -186,8 +186,6 @@ export const Navbar = () => {
    }
 
    const initializedItems = menuItems.map(initializeMenu)
-   console.log(menuItems)
-   console.log(initializedItems)
 
    return (
       <div className="bg-base-100 navbar w-full z-10">
@@ -204,7 +202,7 @@ export const Navbar = () => {
                   onChange={(e) => setUrl(e.target.value)}
                   onKeyDown={(e) => {
                      if (e.key === 'Enter') {
-                        setSocket({ type: 'url', url })
+                        setSocket({ type: 'url', payload: url })
                      }
                   }}
                />

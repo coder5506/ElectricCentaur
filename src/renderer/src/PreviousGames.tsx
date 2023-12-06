@@ -62,7 +62,7 @@ export const PreviousGames = () => {
    }
 
    return (
-      <div className="bg-base-100 h-full overflow-y-auto">
+      <div className="bg-base-100 h-full overflow-y-auto z-20">
          <ul className="menu">
             {games.map(({ black, created_at, id, result, white }) => (
                <li key={id}>

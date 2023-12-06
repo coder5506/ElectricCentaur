@@ -91,7 +91,7 @@ export const App = (): JSX.Element => {
             <Dialogs />
          </div>
 
-         <div className="drawer-side">
+         <div className="drawer-side z-10">
             <label className="drawer-overlay" htmlFor="showDrawer" />
             <PreviousGames />
          </div>
